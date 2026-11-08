@@ -106,7 +106,8 @@ int main() {
                 cv::line(image2, armor_pts[k], armor_pts[(k + 1) % 4], cv::Scalar(0, 255, 0), 2);
             }
 
-            
+             cv::circle(image2, armor_rect.center, 4, cv::Scalar(0, 0, 255), -1);
+
           
         }
     }
